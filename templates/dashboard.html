@@ -1,0 +1,62 @@
+{% extends "base.html" %} {% block content %}
+<style>
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #2dcba7;
+        color: black;
+        text-align: center;
+        font-size: 25px;
+        font-weight: bold;
+    }
+</style>
+<div class="row justify-content-center" id="banner">
+    <div class="row mt-3">
+        <div class="col-md-4 upload" id="banner-txt">
+            <!-- <h1>Traffic Symbol Recognization</h1> -->
+            <h2>Upload Picture</h2>
+            <div>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <form id="upload-file" method="post" enctype="multipart/form-data">
+                    <label for="imageUpload" class="upload-label">
+                        Upload...
+                    </label>
+                    <input type="file" name="imagefile" id="imageUpload" accept=".png, .jpg, .jpeg">
+                </form>
+
+                <div class="image-section" style="display:none;">
+                    <div class="img-preview">
+                        <div id="imagePreview">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary btn-lg " id="banner-btn1">Predict Symbol</button>
+                    </div>
+                </div>
+
+                <div class="loader" style="display:none;">
+                </div>
+
+                <!-- <h3 id="result">
+                    <span> </span>
+                </h3> -->
+
+            </div>
+        </div>
+        <div class="col-md-2 text-center arrow" id="banner-img">
+            <img src="{{url_for('static', filename='images/arrow.png')}}" alt="" class="img-fluid">
+        </div>
+        <div class="col-md-6 p_result" id="banner-img">
+            <!-- <img src="{{url_for('static', filename='images/traffic.jpg')}}" alt="" class="img-fluid"> -->
+            <div class="p_output">
+                <h3 id="result">
+                    <span> </span>
+                </h3>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

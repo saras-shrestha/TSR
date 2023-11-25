@@ -1,0 +1,83 @@
+/* navbar */
+#top_nav{
+    background-color: #daac00 !important;
+    padding: 0 8%;
+}
+
+.nav-head{
+    color: #ffffff;
+    font-size: 45px;
+    margin-top: 10px;
+    padding-left: 1.6em;
+}
+
+
+.navbar-dark .navbar-nav .nav-link{
+    color: rgb(255 255 255);
+    font: size 20px;
+    padding-left: 25px;
+}
+.logo{
+    height: 70px;
+}
+#search-btn{
+    position: relative;
+   z-index: 1;
+   background-color: #00bec9;
+   color: #ffffff;
+   border: 0;
+   border-radius: 0;
+}
+#search-box::placeholder{
+    color: #ffffff;
+}
+#search-box{
+   background-color: #fcc302; 
+   color: #ffffff;
+   border: 0px;
+   border-radius: 0px;
+   box-shadow: 5px 10px 11px 0px #00000021;
+   position: relative;
+   left: 27px;
+}
+@media only screen and (max-width: 912px){
+    #searchform{
+        margin-bottom:30px;
+        margin-top: 20px;
+        position: relative;
+        left:-5px;
+    }
+}
+@media only screen and (max-width: 500px){
+    #top_nav{
+        padding: 0;
+    }
+}
+/* banner */
+#banner{
+    background-color: #fcc302;
+    padding-bottom: 20px;
+    height: 100vh;
+}
+#banner-txt h2{
+    color: #ffffff;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+#banner-txt p{
+    color: #ffffff;
+    font-size: 20px ;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+#banner-btn1{
+    background-color: #00bec9;
+    border: 2px solid #00bec9;
+    color: white;
+}
+#banner-btn2{
+    border: 2px solid #ffffff;
+    color: white;
+    margin-left: 15px;
+}
